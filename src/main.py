@@ -80,7 +80,7 @@ api.update_status(tweet)
 
 query = 'Playstation OR Xbox OR Wii OR Nintendo'
 
-response = client.search_recent_tweets(query, max_results = 10, tweet_fields = ['author_id'])
+response = client.search_recent_tweets(query, max_results = 15, tweet_fields = ['author_id'])
 
 for tweet in response.data:
     list = [tweet.author_id]
