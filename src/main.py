@@ -2,12 +2,14 @@ import os
 import re
 import tweepy
 import random
-
 from urllib.request import Request, urlopen
+from dotenv import load_dotenv
 
 ####################################################################
 ######################## API AUTHENTICATION ########################
 ####################################################################
+
+load_dotenv()
 
 api_keys = os.environ.get('api_keys')
 api_keys_secret = os.environ.get('api_keys_secret')
